@@ -5,8 +5,8 @@ function Home(){
     return(
         <HomeStyle>
             <h1>Jamie Jenks</h1>
-            <h3>Inspirator</h3>
-            <h3>Industrious</h3>
+            <h3>Inspiring</h3>
+            <h3>Determined</h3>
             <h3>Developer</h3>
         </HomeStyle>
     )

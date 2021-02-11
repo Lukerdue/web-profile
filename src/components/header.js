@@ -8,8 +8,9 @@ function Header(){
     return(
         <StyledHeader>
             <nav>
-                <a>Projects</a>
-                <a>About</a>
+                <a href="/">Home</a>
+                <a href="/projects">Projects</a>
+                <a href="/about">About</a>
             </nav>
             <div className="socials">
                 <img src={github}/>
@@ -24,12 +25,12 @@ export default Header
 const StyledHeader = styled.header`
 
 @keyframes grow{
-    from{width: 7.5%}
-    to{width: 9%}
+    from{width: 7.5%};
+    to{width: 9%};
 }
 @keyframes out{
-    from{width: 9%}
-    to{width: 7.5%}
+    from{width: 9%};
+    to{width: 7.5%};
 }
 
 display: flex;
@@ -63,5 +64,14 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+nav a:hover{
+    color: gray;
+    cursor: pointer;
 }
 `
