@@ -22,6 +22,16 @@ function Header(){
 export default Header
 
 const StyledHeader = styled.header`
+
+@keyframes grow{
+    from{width: 7.5%}
+    to{width: 9%}
+}
+@keyframes out{
+    from{width: 9%}
+    to{width: 7.5%}
+}
+
 display: flex;
 width: 100%;
 justify-content: space-around;
@@ -34,6 +44,19 @@ font-family: "Montserrat", sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    img{
+        width: 7.5%;
+        animation-name: out;
+        animation-fill-mode: forwards;
+        animation-duration: .2s;
+    }
+}
+img:hover{
+    cursor: pointer;
+    animation-name: grow;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
 }
 nav{
     width: 20%;
