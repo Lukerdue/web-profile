@@ -14,13 +14,16 @@ function About (){
             </div>
             <div className="text-wrapper">
                 <p>I'm a <span>full stack web developer</span> with a focus on front-end
-                 expierence in React, Javascript, HTML, CSS, and Less</p>
+                 expierence in React, Javascript, HTML, CSS, and Less.<br/>
+                 My backend experience is in Java with data base management in postgreSQL
+                 </p>
                  <div className="text-img">
                      <img src={frontendStack} alt="Ftont end stack logos for JS, HTML and CSS"/>
                      <img id="java" src={java} alt="Java logo"/>
                  </div>
                  <p>
-                    My backend experience is in Java with data base management in postgreSQL
+                    I learned to code during the 2020 COVID-19 lockdown with Lambdaschool. Lambda not only taught me to code, but taught me how to grow and succeed.
+                    Two years ago I worked as a Lighting Designer at a small local theatre and now I can take designers' visions and breathe life into them through web development.
                  </p>
             </div>
         </StyledAbout>
@@ -30,6 +33,7 @@ export default About
 
 const StyledAbout = styled.div`
 font-family: "Montserrat", sans-serif;
+font-size: 85%;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
@@ -46,12 +50,13 @@ img{
 .text-wrapper{
 background-color: rgb(225, 243, 280, .5);
 width: 40%;
-padding: 4%;
+padding: 2%;
 border-radius: 30px;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+text-align: center;
 }
 
 .img-wrapper{
