@@ -3,9 +3,11 @@ import styled from 'styled-components';
 import github from '../img/github.png';
 import linkedin from '../img/linkedin.png';
 import email from '../img/email.png';
+import {AnimatedGradient} from './animatedGradient'
 
 function Header(){
     return(
+        
         <StyledHeader>
             <nav>
                 <a href="/">Home</a>
@@ -35,13 +37,15 @@ const StyledHeader = styled.header`
 
 display: flex;
 width: 100%;
-justify-content: space-around;
+margin: 0;
+padding: 0;
+justify-content: space-evenly;
 align-items: center;
 height: 10vh;
 font-family: "Montserrat", sans-serif;
 
 .socials{
-    width: 20%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
