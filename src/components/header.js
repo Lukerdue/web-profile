@@ -77,6 +77,10 @@ nav a:hover{
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1350px){
+    color: white;
+}
+
 @media only screen and (max-width: 1200px){    
         flex-direction: column;
         margin-top: 2%;

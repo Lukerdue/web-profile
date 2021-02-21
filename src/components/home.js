@@ -63,7 +63,7 @@ h1{
     animation-fill-mode: forwards;
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1350px){
     color: white;
 }
 `

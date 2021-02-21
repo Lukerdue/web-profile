@@ -7,7 +7,9 @@ import styled from 'styled-components';
 function Projects(){
     return(
         <ProjectsStyled>
-            <div className="project">
+            <h2>Projects</h2>
+            <div className="projects">
+                <div className="project">
                 <img src={firstSite}/>
                 <p>This was my first resume portfolio site. This one is pure HTML and CSS/Less and it was the first project I designed and coded from scratch by myself.
                     Later in my Lambda career I used it as my test to deploy a static website, and for that I used Vercel.
@@ -38,19 +40,35 @@ function Projects(){
                     <a href="https://github.com/Lukerdue/JuMPco">Github</a>
                 </div>
             </div>
+            </div>
         </ProjectsStyled>
     )
 }
 export default Projects
 
 const ProjectsStyled = styled.div`
-margin-top: 8%;
+margin-top: 0;
 display: flex;
-flex-direction: row;
+flex-direction: column;
 justify-content: space-around;
 width: 100%;
 font-family: "Montserrat", sans-serif;
 font-size: 90%;
+align-items: center;
+
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+h2{
+    font-size: 300%;
+    color: black;
+    padding: 0;
+    margin-top: 3%;
+}
 
 img{
     width: 95%;
@@ -83,5 +101,59 @@ a:hover{
     cursor: pointer;
     border-color: white;
     background-color: gray;
+}
+@media only screen and (max-width: 1350px){
+    max-width: 100%;
+    padding: 0;
+    h2{
+        color: white;
+    }
+
+    .project{
+        background-color: rgb(225, 233, 280, .8)
+    }
+}
+
+@media only screen and (max-width: 950px){
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    h2{
+        color: white;
+    }
+    .projects{
+        width: 100%;
+        flex-direction: column;
+        .project{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+            padding: 0;
+            width: 100%;
+            flex-direction: row;
+            p{
+                margin: 0;
+                width: 50%;
+            }
+
+            img{
+            width: 20%;
+            }
+            .links{
+                width: 10%;
+                display: flex;
+                flex-direction: column;
+                a{
+                    margin-top: 15%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 635px){
+    .links{
+        font-size: 75%
+    }
 }
 `
