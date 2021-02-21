@@ -5,8 +5,8 @@ function Home(){
     return(
         <HomeStyle>
             <h1>Jamie Jenks</h1>
-            <h3 id="one">Inspiring</h3>
-            <h3 id="two">Determined</h3>
+            <h3 id="one">Front-end</h3>
+            <h3 id="two">Back-end</h3>
             <h3 id="three">Developer</h3>
         </HomeStyle>
     )
@@ -61,5 +61,9 @@ h1{
     animation-delay: 1.5s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 1200px){
+    color: white;
 }
 `
