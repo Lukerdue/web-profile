@@ -13,7 +13,7 @@ function About (){
                 <img src={me} alt="Jamie Jenks"/>
             </div>
             <div className="text-wrapper">
-                <p>I'm a <span>full stack web developer</span> with a focus on front-end
+                <p>I'm a <span>full stack web developer</span> with most of my front-end
                  expierence in React, Javascript, HTML, CSS, and Less.<br/>
                  My backend experience is in Java with data base management in postgreSQL
                  </p>
@@ -79,6 +79,24 @@ text-align: center;
 
     #java{
         width: 20%;
+    }
+}
+@media only screen and (max-width: 1350px){
+    .img-wrapper img{
+        border: 4px solid white;
+    }
+
+    .text-wrapper{
+        background-color: rgb(225, 233, 280, .7);
+    }
+}
+
+@media only screen and (max-width: 900px){
+    width: 100%;
+    background-color: rgb(225, 233, 280, .7);
+    .text-wrapper{
+        width: 65%;
+     background-color: transparent;   
     }
 }
 `

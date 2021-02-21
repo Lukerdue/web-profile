@@ -1,21 +1,28 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
-import github from '../img/github.png';
-import linkedin from '../img/linkedin.png';
-import email from '../img/email.png';
+import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 
 function Header(){
+    const history = useHistory();
+
+    function useNav(e){
+        e.preventDefault();
+        history.push(e.target.name)
+    }
+
     return(
         <StyledHeader>
-            <nav>
-                <a href="/">Home</a>
-                <a href="/projects">Projects</a>
-                <a href="/about">About</a>
+                <nav>
+                <a name="/" onClick={useNav}>Home</a>
+                <a name="/projects" onClick={useNav}>Projects</a>
+                <a name="/about" onClick={useNav}>About</a>
             </nav>
             <div className="socials">
-                <img src={github}/>
-                <img src={linkedin}/>
-                <img src={email}/>
+            <FaGithubSquare className="icon"/>
+            <FaLinkedin className="icon"/>
+            <MdEmail className="icon"/>
             </div>
         </StyledHeader>
     )
@@ -23,41 +30,36 @@ function Header(){
 export default Header
 
 const StyledHeader = styled.header`
-
-@keyframes grow{
-    from{width: 7.5%};
-    to{width: 9%};
-}
-@keyframes out{
-    from{width: 9%};
-    to{width: 7.5%};
+@keyframes onload{
+    from{opacity: 0;}
+    to{opacity: 1}
 }
 
+opacity: 0;
+animation-name: onload;
+animation-fill-mode: forwards;
+animation-duration: 1s;
+animation-delay: 3.2s;
 display: flex;
 width: 100%;
-justify-content: space-around;
+margin: 0;
+padding: 0;
+justify-content: space-evenly;
 align-items: center;
 height: 10vh;
 font-family: "Montserrat", sans-serif;
 
 .socials{
-    width: 20%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    font-size: 200%;
 
-    img{
-        width: 7.5%;
-        animation-name: out;
-        animation-fill-mode: forwards;
-        animation-duration: .2s;
+    .icon:hover{
+        color: gray;
+        cursor: pointer;
     }
-}
-img:hover{
-    cursor: pointer;
-    animation-name: grow;
-    animation-duration: .3s;
-    animation-fill-mode: forwards;
 }
 nav{
     width: 20%;
@@ -74,4 +76,31 @@ nav a:hover{
     color: gray;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 1350px){
+    color: white;
+}
+
+@media only screen and (max-width: 1200px){    
+        flex-direction: column;
+        margin-top: 2%;
+
+    .socials{
+        margin-top: 2%;
+        font-size: 170%;
+        color: white;
+    }
+        
+    nav{
+        width: 50%;
+    }
+    nav a{
+        color: white;
+
+        :hover{
+            color: gray;
+        }
+    }
+}
+
 `
