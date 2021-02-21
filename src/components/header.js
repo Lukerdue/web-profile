@@ -20,9 +20,9 @@ function Header(){
                 <a name="/about" onClick={useNav}>About</a>
             </nav>
             <div className="socials">
-            <FaGithubSquare className="icon"/>
-            <FaLinkedin className="icon"/>
-            <MdEmail className="icon"/>
+            <a href="https://www.github.com/Lukerdue"><FaGithubSquare className="icon"/></a>
+            <a href="https://www.linkedin.com/in/jamie-jenks-7a014473/"><FaLinkedin className="icon"/></a>
+            <a href="mailto: jamielynjenks@gmail.com"><MdEmail className="icon"/></a>
             </div>
         </StyledHeader>
     )
@@ -55,6 +55,10 @@ font-family: "Montserrat", sans-serif;
     align-items: center;
     justify-content: space-evenly;
     font-size: 200%;
+    
+    a{
+        color: inherit;
+    }
 
     .icon:hover{
         color: gray;
@@ -69,7 +73,7 @@ nav{
 
     a{
         text-decoration: none;
-        color: inherit;
+        
     }
 }
 nav a:hover{
@@ -89,6 +93,10 @@ nav a:hover{
         margin-top: 2%;
         font-size: 170%;
         color: white;
+
+        a{
+            color: inherit;
+        }
     }
         
     nav{
