@@ -81,4 +81,22 @@ text-align: center;
         width: 20%;
     }
 }
+@media only screen and (max-width: 1350px){
+    .img-wrapper img{
+        border: 4px solid white;
+    }
+
+    .text-wrapper{
+        background-color: rgb(225, 233, 280, .7);
+    }
+}
+
+@media only screen and (max-width: 900px){
+    width: 100%;
+    background-color: rgb(225, 233, 280, .7);
+    .text-wrapper{
+        width: 65%;
+     background-color: transparent;   
+    }
+}
 `
