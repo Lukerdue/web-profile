@@ -21,7 +21,7 @@ function Header(){
             </nav>
             <div className="socials">
             <a href="https://www.github.com/Lukerdue"><FaGithubSquare className="icon"/></a>
-            <a href="https://www.linkedin.com/in/jamie-jenks-7a014473/"><FaLinkedin className="icon"/></a>
+            <a href="https://www.linkedin.com/in/jamiejenksdev/"><FaLinkedin className="icon"/></a>
             <a href="mailto: jamielynjenks@gmail.com"><MdEmail className="icon"/></a>
             </div>
         </StyledHeader>
