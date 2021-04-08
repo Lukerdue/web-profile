@@ -15,7 +15,7 @@ function About (){
             <div className="text-wrapper">
                 <p>I'm a <span>full stack web developer</span> with most of my front-end
                  expierence in React, Javascript, HTML, CSS, and Less.<br/>
-                 My backend experience is in Java with data base management in postgreSQL
+                 My backend experience is in Java.
                  </p>
                  <div className="text-img">
                      <img src={frontendStack} alt="Ftont end stack logos for JS, HTML and CSS"/>
