@@ -7,19 +7,16 @@ import Projects from './components/projects';
 function App() {
   return (
     <div className="App">
-      <Switch>
         <Header/>
+        <Route exact path='/'>
+          <Home/>
+        </Route>
         <Route path='/about'>
           <About/>
         </Route>
         <Route path="/projects">
           <Projects/>
         </Route>
-        <Route path='/'>
-        <Home/>
-        </Route>
-        </Switch>
-        
     </div>
   );
 }
