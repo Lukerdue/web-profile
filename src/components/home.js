@@ -5,8 +5,8 @@ function Home(){
     return(
         <HomeStyle>
             <h1>Jamie Jenks</h1>
-            <h3 id="one">Front-end</h3>
-            <h3 id="two">Back-end</h3>
+            <h3 id="one">Full</h3>
+            <h3 id="two">Stack</h3>
             <h3 id="three">Developer</h3>
         </HomeStyle>
     )
