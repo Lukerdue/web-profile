@@ -17,7 +17,7 @@ export const HomeStyle = styled.div `
         display: flex;
         flex-direction: column;
         margin: 0;
-        margin-top: 20%;
+        margin-top: 15%;
     }
     .titles > h1, .titles > h2{
         color: white;
@@ -36,6 +36,7 @@ export const HomeStyle = styled.div `
         height: 100vh;
         flex-wrap: wrap;
     }
+
     /* moon stuff */
     .moonwrapper{
         display: flex;
@@ -154,6 +155,37 @@ export const HomeStyle = styled.div `
         margin-top: 87px;
     }
 
+    //Button stuff
+    @keyframes bhover{
+        0%{
+            background-color: transparent;
+            color: #ccd3ff;
+        }
+        100%{
+            background-color: #ccd3ff;
+            color: #121212;
+        }
+    }
+    .buttonWrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: -18vh;
+    }
+    .buttonWrapper button{
+        height: fit-content;
+        background-color: transparent;
+        border: 3px solid #ccd3ff;
+        color: #ccd3ff;
+        padding: 10px 70px;
+        border-radius: 15px;
+        z-index: 2;
+        text-transform: uppercase;
+    }
+    .buttonWrapper button:hover{
+        animation: bhover .2s ease-in-out forwards;
+    }
+
     //sea stuff
 
     //ripple animation keyframes
@@ -163,8 +195,8 @@ export const HomeStyle = styled.div `
             margin-top: 10px;
         }
         100%{
-            margin-left: 30px;
-            margin-top: 6px;
+            margin-left: 20px;
+            margin-top: 8px;
         }
     }
     @keyframes ripple2 {
@@ -172,7 +204,7 @@ export const HomeStyle = styled.div `
             margin-left: 20px;
         }
         100%{
-            margin-left: 40px;
+            margin-left: 30px;
         }
     }
     @keyframes ripple3 {
@@ -180,7 +212,7 @@ export const HomeStyle = styled.div `
             margin-left: 5px
         }
         100%{
-            margin-left: 45px;
+            margin-left: 25px;
         }
     }
     @keyframes ripple4 {

@@ -37,6 +37,9 @@ function Home(){
                     <div className="crater five"></div>
                 </div>
             </div>
+            <div className="buttonWrapper">
+                <button>Dive In</button>
+            </div>
             <div className="sea">
                     <div className="blue1">
                         <div className="beams">
