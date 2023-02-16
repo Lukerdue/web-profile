@@ -181,6 +181,7 @@ export const HomeStyle = styled.div `
         border-radius: 15px;
         z-index: 2;
         text-transform: uppercase;
+        font-size: 1.3em;
     }
     .buttonWrapper button:hover{
         animation: bhover .2s ease-in-out forwards;

@@ -17,8 +17,23 @@ img, picture, video, canvas, svg, iframe{
 input, button, textarea, select{
   font: inherit;
 }
+/* 
+  import fonts  for use with react styled components
+  and set them as the defaults for headers and paragraphs
+*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Montserrat:wght@400;600&display=swap');
 
 p, h1, h2, h3, h4, h5, h6, span {
   overflow-wrap: break-word;
   font-size: 96%;
 }
+h1, h2, h3, h4, h5, h6, button{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 500;
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
