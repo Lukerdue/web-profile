@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { HomeStyle } from '../styles/homeStyled';
 
+
 function Home(){
     const [clicked, setClicked] = useState(``)
     function handleButton(e){
