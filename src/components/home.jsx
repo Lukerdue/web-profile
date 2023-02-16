@@ -1,8 +1,15 @@
 import React from 'react';
+import { useState } from 'react';
 import { HomeStyle } from '../styles/homeStyled';
 
 function Home(){
-    return (<HomeStyle>
+    const [clicked, setClicked] = useState(``)
+    function handleButton(e){
+        e.preventDefault();
+        setClicked(`scroll .8s ease-in-out forwards`);
+    }
+
+    return (<HomeStyle clicked={clicked}>
             <div className="stars">
                 <div className="star a"></div>
                 <div className="star b"></div>
@@ -38,7 +45,7 @@ function Home(){
                 </div>
             </div>
             <div className="buttonWrapper">
-                <button>Dive In</button>
+                <button onClick={handleButton}>Dive In</button>
             </div>
             <div className="sea">
                     <div className="blue1">

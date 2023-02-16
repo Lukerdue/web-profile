@@ -11,6 +11,19 @@ export const HomeStyle = styled.div `
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    
+    //Handle click to scroll
+    @keyframes scroll{
+        0%{
+            margin-top: 0;
+            opacity: 1;
+        }
+        100%{
+            margin-top: -75vh;
+            opacity: 0;
+        }
+    }
+    animation: ${props => props.clicked};
     .titles{
         height: fit-content;
         width: 40%;
@@ -18,6 +31,7 @@ export const HomeStyle = styled.div `
         flex-direction: column;
         margin: 0;
         margin-top: 15%;
+        padding-left: 10%;
     }
     .titles > h1, .titles > h2{
         color: white;
@@ -36,6 +50,7 @@ export const HomeStyle = styled.div `
         height: 100vh;
         flex-wrap: wrap;
     }
+
 
     /* moon stuff */
     .moonwrapper{
@@ -170,7 +185,7 @@ export const HomeStyle = styled.div `
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: -18vh;
+        margin-top: -19vh;
     }
     .buttonWrapper button{
         height: fit-content;
