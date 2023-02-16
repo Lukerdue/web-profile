@@ -10,22 +10,39 @@ export const HomeStyle = styled.div `
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     .titles{
-        width: 30%;
+        height: fit-content;
+        width: 40%;
         display: flex;
         flex-direction: column;
         margin: 0;
+        margin-top: 20%;
     }
     .titles > h1, .titles > h2{
         color: white;
-        max-width: 100%;
+    }
+    .titles > h1 {
+        font-size: 4em;
+    }
+    .titles > h2{
+        font-size: 2em;
+    }
+    .foreground{
+        margin-top: -100vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 100vh;
+        flex-wrap: wrap;
     }
     /* moon stuff */
     .moonwrapper{
-        display: block;
+        display: flex;
         width: 50%;
-        height: 100%;
         padding-top: 10%;
+        height: 100%;
+        align-items: start;
     }
     .actualmoon{
         width: 250px;
@@ -74,5 +91,171 @@ export const HomeStyle = styled.div `
     .six{
         height: 40px;
         width: 40px;
+    }
+
+    //star stuff
+    .stars{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        height: 100vh;
+    }
+    .star{
+        height: 3px;
+        width: 3px;
+        background-color: #ccd3ff;
+    }
+    .a{
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+    .b{
+        margin-top: 570px;
+        margin-left: -3px;
+    }
+    .c{
+        margin-top: 130px;
+        margin-left: 40px;
+    }
+    .d{
+        margin-top: 400px;
+    }
+    .e{
+        margin-top: 350px;
+    }
+    .f{
+        margin-top: 150px;
+    }
+    .g{
+        margin-top: 37px;
+    }
+    .h{
+        margin-top: 520px;
+    }
+    .i{
+        margin-top: 50px;
+    }
+    .j{
+        margin-top: 440px;
+    }
+    .k{
+        margin-top: 620px;
+    }
+    .l{
+        margin-top: 300px;
+    }
+    .m{
+        margin-top: 150px;
+    }
+    .n{
+        margin-top: 540px;
+    }
+    .o{
+        margin-top: 87px;
+    }
+
+    //sea stuff
+
+    //ripple animation keyframes
+    @keyframes ripple1 {
+        0%{
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        100%{
+            margin-left: 30px;
+            margin-top: 6px;
+        }
+    }
+    @keyframes ripple2 {
+        0%{
+            margin-left: 20px;
+        }
+        100%{
+            margin-left: 40px;
+        }
+    }
+    @keyframes ripple3 {
+        0%{
+            margin-left: 5px
+        }
+        100%{
+            margin-left: 45px;
+        }
+    }
+    @keyframes ripple4 {
+        0%{
+            margin-left: 30px;
+        }
+        100%{
+            margin-left: 45px;
+        }
+    }
+    @keyframes ripple5{
+        0%{
+            margin-left: 0;
+        }
+        100%{
+            margin-left: 20px;
+        }
+    }
+
+    //Sea-ss (get it css, sea-ss)
+    .sea{
+        margin-top: -13vh;
+        width: 100vw;
+        height: 13vh;;
+        align-items: center;
+        justify-content: center;
+    }
+    .blue1{
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 8vh;
+        background-color:#0b183b; 
+    }
+    .blue2{
+        margin: 0;
+        width: 100%;
+        height: 5vh;
+        background-color: #050e26;
+        display: flex;
+        justify-content: center;
+    }
+    .beams{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-left: 32%;
+    }
+    .beam{
+        height: 1vh;
+        width: 100%;
+        margin-top: .5vh;
+        border-radius: 15px;
+        background-color: #ccd3ff;
+    }
+    .b1{
+        margin-left: 10px;
+        animation: ripple1 2s ease-in-out infinite alternate-reverse;
+    }
+    .b2{
+        margin-left: 20px;
+        animation: ripple2 5s ease-in-out infinite alternate-reverse;
+    }
+    .b3{
+        margin-left: 5px;
+        animation: ripple3 3s ease-in-out infinite alternate-reverse;
+    }
+    .b4{
+        margin-left: 30px;
+        animation: ripple4 2s ease-in-out infinite alternate-reverse;
+    }
+    .b5{
+        margin-left: 0;
+        animation: ripple5 4s ease-in-out infinite alternate-reverse;
     }
 `
