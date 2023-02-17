@@ -27,6 +27,7 @@ input, button, textarea, select{
 p, h1, h2, h3, h4, h5, h6, span {
   overflow-wrap: break-word;
   font-size: 96%;
+  color: #ccd3ff;
 }
 h1, h2, h3, h4, h5, h6, button{
   font-family: 'Barlow Condensed', sans-serif;

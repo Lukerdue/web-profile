@@ -1,16 +1,22 @@
 import React from 'react';
 import { useState } from 'react';
 import { HomeStyle } from '../styles/homeStyled';
+import { useNavigate } from 'react-router-dom';
 
 
 function Home(){
     const [clicked, setClicked] = useState(``)
+    const navigate = useNavigate();
+
+    //The scroll animation
+
     function handleButton(e){
         e.preventDefault();
+        document.addEventListener('animationend', (e) =>{navigate('/contact')})
         setClicked(`scroll .8s ease-in-out forwards`);
     }
 
-    return (<HomeStyle clicked={clicked}>
+    return (<HomeStyle className="home" clicked={clicked}>
             <div className="stars">
                 <div className="star a"></div>
                 <div className="star b"></div>
