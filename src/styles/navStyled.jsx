@@ -6,6 +6,7 @@ export const NavStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 5vh;
     ul{
         width: 75%;
         list-style-type: none;
