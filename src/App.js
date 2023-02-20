@@ -1,23 +1,24 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './components/home';
-import Header from './components/header';
-import { Route, Switch } from 'react-router-dom';
-import About from './components/about';
+import Contact from './components/contact';
+import NotFound from './components/404';
 import Projects from './components/projects';
+
+const browserRouter = createBrowserRouter([{
+  path:"/",
+  element: <Home />,
+  errorElement: <NotFound/>
+}, {
+  path:"/contact",
+  element: <Contact />
+},{
+  path:"/projects",
+  element: <Projects />
+}])
 
 function App() {
   return (
-    <div className="App">
-        <Header/>
-        <Route exact path='/'>
-          <Home/>
-        </Route>
-        <Route path='/about'>
-          <About/>
-        </Route>
-        <Route path="/projects">
-          <Projects/>
-        </Route>
-    </div>
+    <RouterProvider router={browserRouter} />
   );
 }
 
