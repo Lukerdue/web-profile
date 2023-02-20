@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { ContactStyle } from '../styles/contactStyled';
+import Navigation from './navigation';
+
  function Contact(){
     const [animation, setAnimation] = useState('loadin .8s ease-in-out forwards')
 
     return(
     <ContactStyle animation={animation}>
+        <Navigation/>
         <div className="contact-wrap">
             <div className="title">
                 <h1>Say<br/><span className="hello">Hello</span></h1>
@@ -28,7 +31,7 @@ import { ContactStyle } from '../styles/contactStyled';
                 </div>
             </div>
             <div className="txt">
-                <p>Hello! I'm Jamie Jenks, I'm a full stack web developer.<br/>
+                <p>I'm Jamie Jenks, I'm a full stack web developer.<br/>
                 Feel free to reach out to me about anything, I love to chat and meet new people.
                 The best way to reach me is to just <a href="https://linkedin.com/in/jamiejenksdev/">shoot me a message on Linkedin </a>
                 or send me an email! Either way I'll be sure to get back to you soon.<br/><br/> Thank you!</p>
