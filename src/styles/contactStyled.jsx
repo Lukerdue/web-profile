@@ -91,7 +91,8 @@ export const ContactStyle = styled.div`
 
     .contact-wrap{
         width: 75%;
-        padding-top: 12vh;
+        padding-top: 7vh;
+        max-width: 1100px;
     }
     .title{
         width: 30%;
