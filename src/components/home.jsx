@@ -9,11 +9,10 @@ function Home(){
     const navigate = useNavigate();
 
     //The scroll animation
-
     function handleButton(e){
         e.preventDefault();
         document.addEventListener('animationend', (e) =>{navigate('/contact')})
-        setClicked(`scroll .8s ease-in-out forwards`);
+        setClicked(`scroll .5s ease-in-out forwards`);
     }
 
     return (<HomeStyle className="home" clicked={clicked}>

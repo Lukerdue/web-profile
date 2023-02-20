@@ -39,3 +39,8 @@ p{
   font-size: 1em;
 }
 
+/* set scrollbar to invis. We won't need it but its messing up my animations */
+::-webkit-scrollbar{
+  width: 1px;
+  color: transparent;
+}

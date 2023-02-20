@@ -34,7 +34,7 @@ export const HomeStyle = styled.div `
         padding-left: 10%;
     }
     .titles > h1, .titles > h2{
-        color: white;
+        color: #ccd3ff;
     }
     .titles > h1 {
         font-size: 4em;
@@ -190,13 +190,13 @@ export const HomeStyle = styled.div `
     .buttonWrapper button{
         height: fit-content;
         background-color: transparent;
-        border: 3px solid #ccd3ff;
+        border: 1px solid #ccd3ff;
         color: #ccd3ff;
         padding: 10px 70px;
         border-radius: 15px;
         z-index: 2;
         text-transform: uppercase;
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
     .buttonWrapper button:hover{
         animation: bhover .2s ease-in-out forwards;
