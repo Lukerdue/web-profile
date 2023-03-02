@@ -34,7 +34,7 @@ export const HomeStyle = styled.div `
         padding-left: 10%;
     }
     .titles > h1, .titles > h2{
-        color: #ccd3ff;
+        color: #e1e5fc;
     }
     .titles > h1 {
         font-size: 4em;
@@ -305,5 +305,45 @@ export const HomeStyle = styled.div `
     .b5{
         margin-left: 0;
         animation: ripple5 4s ease-in-out infinite alternate-reverse;
+    }
+
+    //Mobile View
+    @media only screen and (max-width: 600px){
+       .titles{
+        width: 45%;
+        padding-left: 5%;
+        margin-top: 30%;
+       }
+       .titles > h1{
+        font-size: 2.75em;
+       }
+       .titles > h2{
+        font-size: 1.75em;
+       }
+    }
+    @media only screen and (max-width: 500px){
+        .moonwrapper{
+            height: fit-content;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            margin-top: -30%;
+        }
+        .actualmoon{
+            margin-left: 15%;
+        }
+        .titles{
+            margin-top: 5%;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+        }
+        .foreground{
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .buttonWrapper{
+            margin-top: 0;
+        }
     }
 `

@@ -36,7 +36,7 @@ export const ContactStyle = styled.div`
             opacity: 1;
         }
         15%{
-            width: 20%;
+            width: 50px;
             margin-bottom: 0;
         }
         20%{
@@ -114,6 +114,7 @@ export const ContactStyle = styled.div`
         width: 20%;
         animation: wave 2s ease-in-out forwards;
         animation-delay: .4s;
+        width: 50px;
     }
     .icons-wrapper{
         width: 100%;
@@ -152,5 +153,27 @@ export const ContactStyle = styled.div`
     .txt a:hover{
         cursor: pointer;
         color: dodgerblue;
+    }
+
+    //Mobile View
+    @media only screen and (max-width: 560px){
+        .contact-wrap{
+            width: 85%;
+        }
+        h1{
+            font-size: 1.3em;
+        }
+        .hello{
+            font-size: 2em;
+        }
+        .icons-wrapper{
+            justify-content: space-between;
+        }
+        .method{
+            width: 20%;
+        }
+        .txt{
+            font-size: .9em
+        }
     }
 `
